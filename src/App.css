@@ -1,0 +1,147 @@
+:root {
+  --clr--desaturated-Red: hsl(0, 36%, 70%);
+  --clr--soft-red: hsl(0, 93%, 68%);
+  --clr--Dark-Grayish-Red: hsl(0, 6%, 24%);
+  --clr--light-gradient: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  --clr--dark-gradient: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+header{
+  padding: 2rem;
+  background-color: white;
+}
+
+.logo-img{
+  width: 35%;
+  height: auto;
+}
+
+.hero-mobile{
+  width: 100%;
+  height: auto;
+  margin-bottom: 3rem;
+}
+
+h1{
+  color: black;
+  text-align: center;
+  letter-spacing: 0.5rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.color-h1{
+  color: var(--clr--desaturated-Red);
+  font-weight: 300;
+}
+
+p {
+  color: var(--clr--desaturated-Red);
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Footer component */
+
+.attribution {
+  padding: 0;
+  font-size: 14px;
+  text-align: center;
+  margin: 1rem 0;
+  margin-top: 4rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Input component */
+
+input{
+  width: 90%;
+  padding: 1rem;
+  padding-left: 2rem;
+  border-radius: 2rem;
+  background: var(--clr--light-gradient);
+  outline: 0;
+}
+
+::placeholder{
+  color: var(--clr--desaturated-Red);
+}
+
+.input-div{
+  width: 75%;
+  border: 1px solid var(--clr--desaturated-Red);
+  border-radius: 2rem;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.error-icon{
+  margin: 0 1rem;
+}
+
+.error{
+  color: red;
+  padding: 0.4rem;
+}
+
+.submit{
+  background: var(--clr--dark-gradient);
+  width: 6rem;
+  height: 3.2rem;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  box-shadow: 0px 7px 15px var(--clr--desaturated-Red);
+}
+
+.submit img{
+  margin: auto;
+}
+
+@media (min-width: 760px) {
+
+  header{
+    padding: 1rem;
+    padding-left: 5rem;
+  }
+
+  .logo-img {
+    width: 15%;
+  }
+
+  .grid-container{
+    display: flex;
+  }
+
+  .container{
+    width: 85%;
+    padding-top: 3.5rem;
+    padding-left: 5rem;
+    padding-right: 2rem;
+  }
+
+  h1{
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+
+  p{
+    text-align: left;
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+
+  .input-div {
+    margin: 0;
+  }
+
+  picture{
+    order: 1;
+    /* width: 100%;
+    height: auto; */
+  }
+}
