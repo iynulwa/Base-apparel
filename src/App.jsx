@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './App.css'
 import Footer from '../src/Footer'
 import Input from './Input'
@@ -14,10 +13,8 @@ function App() {
         </picture>
 
         <div className='container'>
-          <h1><span className='color-h1'>WE'RE<br /></span>COMING <br />SOON</h1>
-
-          <p>Hello fellow shoppers! We're currently building our new fashion store. 
-          Add your email below to stay up-to-date with announcements and our launch deals.</p>
+          <h1><span className='color-h1'>WE'RE<br/></span>COMING <br/>SOON</h1>
+          <p>Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
 
           <Input />
         </div>

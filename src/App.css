@@ -4,10 +4,11 @@
   --clr--Dark-Grayish-Red: hsl(0, 6%, 24%);
   --clr--light-gradient: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
   --clr--dark-gradient: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  --clr--purple: hsl(228, 45%, 44%);
 }
 
 header{
-  padding: 2rem;
+  padding-inline: clamp(1rem, 3rem - 2vw, 2rem);
   background-color: white;
 }
 
@@ -45,14 +46,14 @@ p {
 
 .attribution {
   padding: 0;
-  font-size: 14px;
+  font-size: 0.8rem;
   text-align: center;
   margin: 1rem 0;
   margin-top: 4rem;
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--clr--purple);
 }
 
 /* Input component */
@@ -102,15 +103,14 @@ input{
   margin: auto;
 }
 
-@media (min-width: 760px) {
+@media (min-width: 47rem) {
 
   header{
-    padding: 1rem;
     padding-left: 5rem;
   }
 
   .logo-img {
-    width: 15%;
+    width: 12%;
   }
 
   .grid-container{
@@ -141,7 +141,5 @@ input{
 
   picture{
     order: 1;
-    /* width: 100%;
-    height: auto; */
   }
 }
