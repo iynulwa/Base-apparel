@@ -8,7 +8,7 @@ function Input() {
 
     function handleChange(event) {
         setInput(event.target.value);
-        if (errorState) setErrorState(false)
+        if (errorState) setErrorState(false);
     }
 
     function validate(email) {
@@ -26,7 +26,6 @@ function Input() {
         }
 
         console.log("Submitted");
-        setInput("");
 
     }
 
